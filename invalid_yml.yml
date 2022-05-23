@@ -1,0 +1,15 @@
+title: No condition
+status: test
+references:
+sadfga
+asfas
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  seleion:
+    Imageendswith: '\asd.exe'
+    CommandLinecontainsall:
+      - 'asd'
+      - 'asd'
+  condion: []]]]
