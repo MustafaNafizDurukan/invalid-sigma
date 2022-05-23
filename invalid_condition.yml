@@ -1,0 +1,15 @@
+title: No condition
+status: test
+references:
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\asd.exe'
+    CommandLine|contains|all:
+      - 'asd'
+      - 'asd'
+  condition: 
+falsepositives:
+  - Use of Program Compatibility Troubleshooter Helper
